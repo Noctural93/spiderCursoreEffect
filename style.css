@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:
+    repeating-linear-gradient(
+        to right, #2d2a44 0 1px, transparent 2px 200px
+    ),
+    repeating-linear-gradient(
+        to bottom, #2d2a44 0 1px, transparent 2px 200px
+    ),
+    radial-gradient(
+        at 50% 50%, #2d2a44, #1d1b34
+    );
+}
+
+h1 {
+    --to: left;
+    font-size: 4em;
+    font-weight: bold;
+    background-image: linear-gradient(
+    to var(--to), #89a5df, #e46e7f, #e8e191
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#dotsCanvas {
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
